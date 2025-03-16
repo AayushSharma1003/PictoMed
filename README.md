@@ -36,7 +36,7 @@ PictoMed is an AI-driven healthcare platform designed for multi-disease detectio
 
    🔹 Users pay for direct consultations through the platform.
 
-## What Makes BulbaCare Unique?
+## What Makes PictoMed Unique?
 
 🔹 Multi-Disease Analysis – Covers skin, eye, and mental health issues in one platform.
 
