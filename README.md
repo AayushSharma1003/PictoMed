@@ -4,6 +4,12 @@
 
 PictoMed is an AI-driven healthcare platform designed for multi-disease detection t. It provides a seamless experience for users by offering real-time AI-based medical analysis, mental health support, and direct doctor consultations.
 
+![1](https://github.com/user-attachments/assets/c9315511-9170-461f-9cbc-5b94baa75ee8)
+![2](https://github.com/user-attachments/assets/fa1beeef-ffb5-4829-a59f-26d20789be9a)
+![3](https://github.com/user-attachments/assets/196323e3-d28e-41ff-b555-46e8b1fd6fd9)
+![4](https://github.com/user-attachments/assets/b2d79a7e-4a43-48bf-9f4e-f0a82dcbe728)
+![5](https://github.com/user-attachments/assets/4586203d-e22a-46a0-aee7-36d2f4d7dbd3)
+
 ## Key Features
 
 ### 1. AI-Based Disease Detection (Skin & Eye)
