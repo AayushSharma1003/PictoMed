@@ -1,0 +1,154 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 30% 98%;
+    --foreground: 150 40% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 40% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 40% 10%;
+
+    --primary: 150 60% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 40% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 20% 94%;
+    --muted-foreground: 150 40% 40%;
+
+    --accent: 150 54% 95%;
+    --accent-foreground: 150 84% 30%;
+
+    --destructive: 150 70% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 20% 90%;
+    --input: 150 20% 90%;
+    --ring: 150 60% 40%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 150 15% 8%;
+    --foreground: 150 10% 95%;
+
+    --card: 150 15% 10%;
+    --card-foreground: 150 10% 95%;
+
+    --popover: 150 15% 8%;
+    --popover-foreground: 150 10% 95%;
+
+    --primary: 150 60% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 40% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 15% 15%;
+    --muted-foreground: 150 10% 70%;
+
+    --accent: 150 15% 15%;
+    --accent-foreground: 150 10% 95%;
+
+    --destructive: 142 70% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 150 40% 40%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/30;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-soft rounded-2xl transition-all dark:bg-black/30 dark:border-white/10;
+  }
+  
+  .glass-input {
+    @apply bg-white/60 backdrop-blur-sm border border-white/30 shadow-inner-glow rounded-xl focus:ring-2 focus:ring-primary/30 transition-all dark:bg-black/20 dark:border-white/10;
+  }
+  
+  .button-glow {
+    @apply relative overflow-hidden shadow-lg transition-all duration-300 hover:shadow-glow after:absolute after:inset-0 after:z-[-1] after:opacity-0 after:transition-opacity hover:after:opacity-100 after:bg-gradient-to-r after:from-bulba-400/30 after:via-bulba-500/20 after:to-mint-400/30 after:blur-xl;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance;
+  }
+  
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-balance;
+  }
+  
+  .heading-md {
+    @apply text-2xl md:text-3xl font-bold tracking-tight text-balance;
+  }
+  
+  .heading-sm {
+    @apply text-xl md:text-2xl font-semibold tracking-tight text-balance;
+  }
+  
+  .body-lg {
+    @apply text-lg leading-relaxed text-balance;
+  }
+  
+  .body-md {
+    @apply text-base leading-relaxed text-balance;
+  }
+  
+  .body-sm {
+    @apply text-sm leading-relaxed text-balance;
+  }
+  
+  .page-container {
+    @apply container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12;
+  }
+  
+  .page-section {
+    @apply my-12 md:my-20;
+  }
+  
+  .content-appear {
+    @apply opacity-0 animate-fade-in;
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--content-index, 0) * 100ms);
+  }
+}
